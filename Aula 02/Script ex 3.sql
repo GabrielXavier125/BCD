@@ -54,6 +54,12 @@ SETOR varchar(50) not null,
 primary key (COD_DEPARTAMENTO)
 );
 
+create table TIPO_PRODUTO (
+COD_TIPO_PRODUTO int auto_increment primary key,
+TIPO_PRODUTO varchar(255) not null,
+index (COD_TIPO_PRODUTO)
+);
+
 alter table FUNCIONARIO
 rename to EMPREGADO;
 
@@ -74,3 +80,6 @@ alter table EMPREGADO drop primary key;
 
 alter table EMPREGADO
 add primary key (COD_FUNCIONARIO,CPF_FUNCIONARIO);
+
+create table TIPO_PRODUTOS 
+COD_TIPO_PRODUTOS int auto_increment primary key not null;
