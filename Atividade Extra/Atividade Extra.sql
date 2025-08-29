@@ -43,4 +43,18 @@ CREATE TABLE CLIENTE (
 INSERT INTO CLIENTE (CCli, Nome, Endereco, Cidade, UF) VALUES
 (11, 'Bruno', 'Rua 1 456', 'Rio Claro', 'SP'),
 (12, 'Cláudio', 'Rua Quadrada 234', 'Campinas', 'SP'),
-(13, 'Cremilda', 'Rua das Flores 66', 'São Paulo', 'SP');
+(13, 'Cremilda', 'Rua das Flores 50', 'São Paulo', 'SP');
+
+UPDATE VENDEDOR
+SET Salario = 3150.00
+WHERE FSalario = 1;
+
+UPDATE VENDEDOR
+SET Salario = Salario * 1.10
+WHERE FSalario = 2;
+
+UPDATE VENDEDOR
+SET Salario = 3500.00
+WHERE FSalario = 3;
+
+SELECT * FROM VENDEDOR;
