@@ -1,0 +1,2 @@
+* Digitar no Terminal do Visual Studio Code do arquivo
+php -S localhost:8080

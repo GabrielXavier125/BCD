@@ -1,0 +1,38 @@
+1ex - SHOW TABLES;
+
+2ex - SHOW FROM ducks
+
+3ex - SELECT * FROM ducks
+
+4ex - SELECT *
+FROM ducks
+WHERE age <= 2;
+
+5ex - SELECT *
+FROM ducks
+ORDER BY age ASC;
+
+6ex - SELECT *
+FROM ducks
+ORDER BY age ASC
+LIMIT 3;
+
+7ex - SELECT 
+  name,
+  age * 12 AS age_in_months
+FROM ducks;
+
+8ex - SELECT DISTINCT species
+FROM ducks;
+
+9ex - SELECT *
+FROM duck_surveys
+ORDER BY RANDOM()
+LIMIT 10;
+
+10ex - SELECT
+  COUNT(*) AS total_ducks,
+  AVG(age) AS average_age,
+  MIN(age) AS youngest_age,
+  MAX(age) AS oldest_age
+FROM ducks;
